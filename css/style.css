@@ -1,0 +1,35 @@
+/*background-image and background ; depending on where we altering the images*/
+body {
+  background: grey url("../img/download.png") no-repeat;
+}
+h1 {
+  text-align: right;
+  color: white;
+  font-size: 12px;
+  text-decoration: line-through;
+  text-transform: uppercase;
+}
+p {
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  text-decoration: underline;
+  text-transform: capitalize;
+  font-family: Arial, Helvetica, sans-serif, Haettenschweiler,
+    "Arial Narrow Bold", sans-serif;
+}
+.wrapper {
+  background-color: burlywood;
+}
+.warpper a {
+  text-decoration: none;
+}
+.warpper a:hover {
+  text-decoration: underline;
+}
+.wrapper a:active {
+  background-color: blue;
+}
+.first {
+  font: italic small-caps bold 1.4em Helvetica, arial, sans-serif;
+}
