@@ -1,7 +1,7 @@
 # Crud-inventory
 26/02/2022 version 1
 
-Basic HTML CSS Javascript CRUD
+#HTML CSS Javascript CRUD
 
 
 
