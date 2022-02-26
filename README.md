@@ -2,6 +2,7 @@
 26/02/2022 version 1
 
 #HTML CSS Javascript CRUD
+https://s3793758.github.io/Crud-inventory/
 
 
 
