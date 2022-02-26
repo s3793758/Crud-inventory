@@ -1,35 +1,81 @@
-/*background-image and background ; depending on where we altering the images*/
-body {
-  background: grey url("../img/download.png") no-repeat;
+:root {
+  --background-color: rgb(124, 154, 167);
+  --background-solid-td: 1px solid rgb(204, 200, 200);
+  --background-td-tr: rgb(204, 200, 200);
+  --background-solid-input-box: 1px solid rgb(165, 161, 161);
+  --background-textbox: #eee;
+  --button-hover-color: #4b99d8;
 }
+
 h1 {
-  text-align: right;
-  color: white;
-  font-size: 12px;
-  text-decoration: line-through;
-  text-transform: uppercase;
-}
-p {
+  color: var(--background-textbox);
   text-align: center;
-  color: white;
-  font-size: 24px;
-  text-decoration: underline;
-  text-transform: capitalize;
-  font-family: Arial, Helvetica, sans-serif, Haettenschweiler,
-    "Arial Narrow Bold", sans-serif;
 }
-.wrapper {
-  background-color: burlywood;
+body {
+  background-image: url("/images/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
-.warpper a {
-  text-decoration: none;
+
+table {
+  width: 80%;
+  margin: 40px auto;
+  background: var(--background-color);
 }
-.warpper a:hover {
-  text-decoration: underline;
+
+table.list {
+  text-align: center;
+  width: 100%;
 }
-.wrapper a:active {
-  background-color: blue;
+
+td {
+  border: var(--background-solid-td);
+  text-align: left;
+  padding: 8px 15px;
 }
-.first {
-  font: italic small-caps bold 1.4em Helvetica, arial, sans-serif;
+
+tr:nth-child(even),
+table.list thread > tr {
+  background-color: var(--background-td-tr);
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 91%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: var(--background-solid-input-box);
+  border-radius: 4px;
+}
+
+button,
+input[type="submit"],
+input[type="reset"] {
+  background: var(--background-textbox);
+  padding: 6px 12px;
+  margin: 15px 0 10px;
+  display: inline-block;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+}
+
+input[type="submit"]:hover {
+  background: var(--button-hover-color);
+}
+
+input[type="reset"]:hover {
+  background: var(--button-hover-color);
+}
+
+button {
+  background: var(--background-textbox);
+}
+
+button:hover {
+  background: var(--button-hover-color);
 }
